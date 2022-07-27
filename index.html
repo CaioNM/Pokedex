@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html lang="on">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, inicial-scale=1.0">
-  <title>Pokedex</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="favicon-16x16.png" />
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+ 
+  <link rel="icon" href="favicon-16x16.png">
+  <link rel="stylesheet" href="style.css">
+
+
+  <script defer src="script.js"></script>
+
+  <title>Pokédex</title>
+</head>
 <body>
+  
   <main>
+    <img src="" alt="pokemon" class="pokemon__image">
+
+    <h1 class="pokemon__data">
+      <span class="pokemon__number"></span> -
+      <span class="pokemon__name"></span>
+    </h1>
+
+    <form class="form">
+      <input
+        type="search"
+        class="input__search"
+        placeholder="Nome ou Número"
+        required
+      />
+    </form>
+
+    <div class="buttons">
+      <button class="button btn-prev">Ant &lt;</button>
+      <button class="button btn-next">Prox &gt;</button>
+    </div>
+
     <img src="pokedex.png" alt="pokedex" class="pokedex">
-    <img src="" alt="pokemon" class="pokemon__img">
   </main>
 
- <!--
-This script places a badge on your repl's full-browser view back to your repl's cover page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green, teal, blue, blurple, magenta, pink!
--->
-<script src="https://replit.com/public/js/replit-badge.js" theme="lime" defer></script> 
 </body>
-
 </html>
